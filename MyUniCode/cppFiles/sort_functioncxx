@@ -1,0 +1,32 @@
+//#include<bits/stdc++.h>
+#include<iostream>
+#define ll long long
+using namespace std;
+//main
+int main(){
+    ll t;
+    cin>>t;
+    while(t--){
+        ll size;
+        cin>>size; // or manually by ll l = sizeof(array)/sizeof(array[0]);
+        ll array[size];
+        for(ll i=0;i<size;i++){
+            cin>>array[i];
+        }
+        sort(array,array+size);   // <-- for sorting in ascending order
+        cout<<"Ascending order for Case #"<<t+1<<"  : ";
+        for(ll j=0;j<size;j++){    // <--length() function for size not working
+            cout<<array[j]<<" ";
+        }         //printing ends for descend....
+        cout<<"\n"<<endl;
+        sort(array,array+size,greater<int>());  // <--- for sorting in decending order
+        cout<<"Descending order for Case #"<<t+1<<" : ";
+      for(ll j=0;j<size;j++){    // <--length() function for size not working
+            cout<<array[j]<<" ";
+        }
+        cout<<"\n"<<endl;
+    }
+    float x{10/9};
+    cout<<static_cast<float>(x);
+    return 0;
+}

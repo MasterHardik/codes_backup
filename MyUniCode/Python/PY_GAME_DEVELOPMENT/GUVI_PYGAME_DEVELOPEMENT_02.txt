@@ -1,0 +1,27 @@
+------------------------------------------------------------------------------------------------------------------------------------
+
+#The code below will showcase all the different function ,how they are used and how they look/
+#we'll initialize pygame and define some consitants before the example.
+
+	import pygame
+	from math import pi
+	pygame.init()
+	screen = pygame.display.set_mode((100,100))
+	white  = pygame.color(255,255,255)
+	red    = pygame.color(255,0,0)
+
+#The black color is the surface default color and represent the part of the surface that 
+#hasn't been drawn onto. The paremeters of each function id explained down at parameters.
+
+	Rect
+		size = (50,50)
+		rec_border = pygame.Surface(size)
+
+#create a surface to draw on 
+
+	pygame.draw.rect(rec_border,RED,rec_border.get_rect(),10)
+
+#draw on it
+
+	rect_filled = pygame.Surface(size)
+	pygame.draw.rect(rect_filled,RED,rect_filled.get_rect())
