@@ -1,0 +1,28 @@
+/* Hashing Data Structure*/
+
+/*
+ * Applications of hashing
+ *  -> Dictionaries
+ *  -> Cryptography
+ *  -> cashes
+ *  -> Symbol Table in compilers / interpreters
+ *  -> Routeres
+ *  DIrect acceess table
+ *
+ * Q. How HASH FUNCTION work?
+ *  - Should always map a large key to same small key
+ *  - Should generate  values from 0 to m-1.
+ *  - should be fast, O(1) for integers, and  O(len) for string oflength "len"
+ *  - should uniformly distribute large key into Hash Table slots.
+ *  # Example of Hash Function
+ *  - H ( large_key ) = large_key%m
+ *
+ *  - For sstrings , weighted sum
+ *          str [] = " abcd "
+ *     str[0]* x^0 + str[1]* x^1 + str[2]* x^2 + sstr[3]* x^3
+ *  - universally  Distributed the  keys  in Table.
+ *  - ideally , choose prime number
+ *  - Chancce of collision is less
+ *
+ *          Bad value of m -> power of 2,10
+ *  */

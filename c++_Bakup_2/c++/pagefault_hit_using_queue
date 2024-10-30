@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int getPagesFaults
+
+int main(){
+	
+	return 0;
+}
+
+
+/*
+
+If we try to address a virtual address that is not in the RAM, we have what is called a page fault (also known as a page miss). If it is in real RAM, we have a page hit. If it is a hit, we return the copy in real RAM, whereas if it is a miss we swap a currently unused page.
